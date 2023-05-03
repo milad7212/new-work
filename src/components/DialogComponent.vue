@@ -15,8 +15,7 @@
             medium
             @click="closeDialog"
           >
-            <!-- {{ mdiClose }} -->
-            احتمالا یک متن اینجاس
+            {{ mdiClose }}
           </v-icon>
         </v-card-title>
         <v-card-text class="mx-0 mb-1 mt-n2 pa-2">
@@ -87,7 +86,7 @@
   </template>
   
   <script>
-//   import { mdiClose } from '@mdi/js'
+  import { mdiClose } from '@mdi/js'
   
   export default {
     props: ['propData'],
@@ -97,7 +96,7 @@
           name: '',
           options: {},
         },
-        // mdiClose,
+        mdiClose,
         dialog: true,
         valid: false,
         requiredRules: [
